@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="src/css/app.css">
+  <style>
+    h1,
+    h2,
+    h3,
+    p,
+    a {
+      font-family: "Vazirmatn";
+
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+
+        extend: {
+
+        },
+
+        colors: {
+          'bright-orange': 'hsl(31, 77%, 52%)',
+          'dark-cyan': 'hsl(184, 100%, 22%)',
+          'very-dark-cyan': 'hsl(179, 100%, 13%)',
+          'transparent-white': 'hsla(0, 0%, 100%, 0.75)',
+          'white': 'hsl(0, 0%, 100%)',
+          'very-light-gray': 'hsl(0, 0%, 95%)'
+        },
+
+
+
+      },
+    }
+  </script>
+  <title>3-column preview card component</title>
+
+
+</head>
+
+<body class=" items-center justify-center w-full bg-very-light-gray">
+
+  <!-- main div -->
+  <div class="grid lg:grid-cols-3 grid-cols-1 px-60 py-40">
+
+
+
+    <!-- card-1 -->
+    <div
+      class=" transition-all duration-200 hover:scale-105 flex flex-col items-start justify-center bg-bright-orange p-7 space-y-6 lg:rounded-tr-xl lg:rounded-br-xl sm:rounded-t-xl lg:rounded-tl-none">
+      <img src="images/icon-sedans.svg" alt="sedan-logo">
+      <h1 class="text-very-light-gray text-4xl font-extrabold"> عمومی</h1>
+      <p class="text-transparent-white ">
+        این لایه وظیفه توصیف رابط عمومی برای یک وب سرویس خاص را دارد. در حال حاضر ، شرح خدمات از طریق
+        توصیف سرویس وب انجام میشود. </p>
+      <div class="pt-20 pb-8">
+
+        <a href="#"
+          class="w-fit rounded-full px-6 py-2 bg-very-light-gray text-bright-orange text-sm hover:text-very-light-gray hover:bg-bright-orange border border-very-light-gray">بیشتر
+          بدانید</a>
+      </div>
+    </div>
+
+    <!-- card-2 -->
+    <div
+      class="transition-all duration-200 hover:scale-105 flex flex-col items-start justify-center bg-dark-cyan p-7 space-y-6">
+      <img src="images/icon-suvs.svg" alt="suv-logo">
+      <h2 class="text-very-light-gray text-4xl font-extrabold">ویژه</h2>
+      <p class="text-transparent-white ">
+        این لایه وظیفه توصیف رابط ویژه برای یک وب سرویس خاص را دارد. در حال حاضر ، شرح خدمات از طریق زبان
+        همراهی خدمات آنلاین انجام میشود.</p>
+      <div class="pt-20 pb-8">
+
+        <a href="#"
+          class="  w-fit rounded-full px-6 py-2 bg-very-light-gray text-dark-cyan text-sm hover:text-very-light-gray hover:bg-dark-cyan border border-very-light-gray">بیشتر
+          بدانید</a>
+      </div>
+    </div>
+
+    <!-- card-3 -->
+    <div
+      class="transition-all duration-200 hover:scale-105 flex flex-col items-start justify-center bg-very-dark-cyan p-7 space-y-6 lg:rounded-tl-xl lg:rounded-bl-xl sm:rounded-b-xl lg:rounded-br-none">
+      <img src="images/icon-luxury.svg" alt="luxury-logo">
+      <h3 class="text-very-light-gray text-4xl font-extrabold">لوکس</h3>
+      <p class="text-transparent-white">
+        این لایه وظیفه توصیف رابط لوکس برای یک وب سرویس خاص را دارد. در حال حاضر ، شرح خدمات از طریق تمامی رابطین انجام
+        میشود.
+      </p>
+      <div class="pt-20 pb-8">
+
+        <a href="#"
+          class=" w-fit rounded-full px-6 py-2 bg-very-light-gray text-very-dark-cyan text-sm  hover:text-very-light-gray hover:bg-very-dark-cyan border border-very-light-gray">بیشتر
+          بدانید</a>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
